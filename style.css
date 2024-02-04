@@ -22,22 +22,20 @@
 }
 
 .slide-dw {
-  background-image: url("z\ site.jpeg");
+  background-image: url("dw-js.jpg");
   background-size: cover;
-  opacity: 60%;
 }
 
 .slide-cd {
-  background-image: url("z\ photoshop.png");
+  background-image: url("cd-js.jpeg");
   background-size: cover;
-  opacity: 60%;
 }
 
 .slide-cdeb {
-  background-image: url("z\ conf.jpeg");
+  background-image: url("cdeb-js.jpg");
   background-size: cover;
-  opacity: 60%;
 }
+
 .subtitle {
   color: #000000;
   font-size: 24px;
@@ -70,8 +68,8 @@ body .swiper-button-prev {
 body.dark {
   background-color: black;
   color: white;
-  text-transform: white;
 }
+
 /*formulaire*/
 
 * {
@@ -82,7 +80,8 @@ body.dark {
 
 body {
   width: 80%;
-  margin: 80px auto;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 form {
@@ -208,4 +207,66 @@ button {
 
 .portfolio-elements {
   padding: 50px 0 !important;
+}
+
+/* NAVBAR: */
+.navbar {
+  overflow: hidden;
+  /* padding: 10px; */
+  background-color: orangered;
+  text-align: left;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar a {
+  padding: 14px 16px;
+  display: inline-block;
+}
+
+.navbar button {
+  background-color: #555;
+  color: white;
+  border: none;
+  /* padding: 10px 20px; */
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 2;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
 }

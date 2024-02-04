@@ -14,8 +14,22 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.css"
     />
   </head>
+
+  <div class="navbar">
+    <button onclick="openNav()">☰ Menu</button>
+    <button id="theme">Dark mode</button>
+    <a href="https://www.iim.fr" style="text-align: center"> IIM </a>
+  </div>
+
+  <div id="sideNav" class="sidenav">
+    <button onclick="closeNav()">Fermer</button>
+    <a href="https://www.iim.fr">Page 1</a>
+    <a href="https://www.iim.fr">Page 2</a>
+    <a href="https://www.iim.fr">Page 3</a>
+  </div>
+
   <!-- darkmode-->
-  <div><button id="theme">Dark mode</button></div>
+
   <!--swiper-->
   <header>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
@@ -160,5 +174,6 @@
     </form>
     <script src="zform.js"></script>
     <script src="darkmode.js"></script>
+    <script src="navbar.js"></script>
   </body>
 </html>
