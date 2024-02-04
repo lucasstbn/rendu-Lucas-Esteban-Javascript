@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.css"
+    />
+  </head>
+  <!-- darkmode-->
+  <div><button id="theme">Dark mode</button></div>
+  <!--swiper-->
+  <header>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="slider.js"></script>
+
+    <div class="swiper mon-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-cd">
+          <p class="subtitle">Création & design</p>
+          <p class="title">Atelier pour apprendre photoshop !</p>
+        </div>
+        <div class="swiper-slide slide-cdeb">
+          <p class="subtitle">Com' digitale</p>
+          <p class="title">Assiste à notre conférence !</p>
+        </div>
+        <div class="swiper-slide slide-dw">
+          <p class="subtitle">Dev web</p>
+          <p class="title">Concours du site le plus beau en 1h !</p>
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </header>
+  <!--script pour lightbox-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js"></script>
+  <main class="portfolio">
+    <div class="filters">
+      <ul>
+        <li data-filter="all" class="active">Tous les projets</li>
+        <li data-filter="cd">Création & Design</li>
+        <li data-filter="cdeb">Com' Digitale</li>
+        <li data-filter="dw">Developpement web</li>
+        <li data-filter="3d">Animation 3D</li>
+        <li data-filter="jv">Jeux vidéos</li>
+      </ul>
+    </div>
+    <div class="portfolio-elements">
+      <div class="card filtr-item" data-category="cd">
+        <div class="card-header">
+          <p class="card-title">Motion design</p>
+          <div class="card-axe">Creation & Design</div>
+        </div>
+        <a href="aluksos.png">
+          <img src="aluksos.png" alt="Motion" />
+        </a>
+      </div>
+      <div class="card filtr-item" data-category="3d">
+        <div class="card-header">
+          <p class="card-title">Maison Link</p>
+          <div class="card-axe">Animation 3D</div>
+        </div>
+        <a href="ablender.png">
+          <img src="ablender.png" alt="Showreel" />
+        </a>
+      </div>
+      <div class="card filtr-item" data-category="cdeb">
+        <div class="card-header">
+          <p class="card-title">Projet de com</p>
+          <div class="card-axe">affiche</div>
+        </div>
+        <a href="affiche com.png">
+          <img src="affiche com.png" alt="affiche de com" />
+        </a>
+      </div>
+      <div class="card filtr-item" data-category="jv">
+        <div class="card-header">
+          <p class="card-title">Décor de jeu</p>
+          <div class="card-axe">Jeux vidéo</div>
+        </div>
+        <a href="arrière plan jeu.png">
+          <img src="arrière plan jeu.png" alt="arrière plan jeu" />
+        </a>
+      </div>
+      <div class="card filtr-item" data-category="dw">
+        <div class="card-header">
+          <p class="card-title">4eme mur</p>
+          <div class="card-axe">Developpement Web</div>
+        </div>
+        <a href="a mise en abime.png">
+          <img src="a mise en abime.png" alt="mise en abîme" />
+        </a>
+      </div>
+    </div>
+    <script src="lightbox.js"></script>
+  </main>
+  <!--formulaire -->
+
+  <body>
+    <div class="message-error">
+      <ul></ul>
+    </div>
+    <div class="message-success">
+      <p>Formulaire envoyé !</p>
+    </div>
+    <form action="" method="POST" enctype="multipart/form-data">
+      <div>
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom" />
+      </div>
+      <div>
+        <label for="prenom">Prénom</label>
+        <input type="text" name="prenom" id="prenom" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="password"> Mot de passe</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <div>
+        <label for="password2">Entrer un nouveau mot de passe</label>
+        <input type="password" name="password2" id="password2" />
+      </div>
+      <div>
+        <label for="radios">2nd :</label>
+        <input type="radio" name="radios" id="radio1" value="radio1" />
+      </div>
+      <div>
+        <label for="radio1">1ere</label>
+        <input type="radio" name="radios" id="radio2" value="radio2" />
+      </div>
+      <div>
+        <label for="radio2">Terminale</label>
+        <input type="radio" name="radios" id="radio3" value="radio3" />
+      </div>
+      <div>
+        <label for="axe">Mon axe :</label>
+        <select name="axe" id="axe">
+          <option value="">Choisir mon axe</option>
+          <option value="axe1">CREA</option>
+          <option value="axe2">COM</option>
+          <option value="axe3">DEV</option>
+        </select>
+      </div>
+      <button id="submit" type="submit">S'inscrire</button>
+    </form>
+    <script src="zform.js"></script>
+    <script src="darkmode.js"></script>
+  </body>
+</html>
